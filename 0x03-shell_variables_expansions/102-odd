@@ -1,0 +1,2 @@
+#!/bin/bash
+paste -s  --delimiters '\t\n' | cut -f 1
