@@ -10,7 +10,7 @@ while ((i<=10)); do
 	if [ $i -eq 4 ]; then
 		echo "bad luck"
 	elif [ $i -eq 8 ]; then
-		echo "best lack"
+		echo "good luck"
 	else
 		echo "Best School"
 	fi
