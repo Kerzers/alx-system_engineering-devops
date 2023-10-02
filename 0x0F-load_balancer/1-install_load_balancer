@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#script that install HAproxy on my load balncer
+
+apt-get update
+apt-get -y install haproxy
+config= "backend my_backend
+        listen load_balancer
+        balance roundrobin
+        server 379220-web-01 52.86.82.70:80 check
+        server 379220-web-02 3.85.148.240:80 check"
+bash -c "echo -e '$config' >> /etc/haproxy/haproxy.cfg
+service haproxy start
