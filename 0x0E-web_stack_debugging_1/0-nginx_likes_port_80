@@ -8,5 +8,6 @@ echo "server {
         server_name localhost;
         location / {
                 try_files \$uri \$uri/ =404;
-        }" > /etc/nginx/sites-enabled/default
+        }
+}" > /etc/nginx/sites-enabled/default
 service nginx start
