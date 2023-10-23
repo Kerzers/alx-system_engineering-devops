@@ -23,7 +23,7 @@ if __name__ == "__main__":
     for elemt in todo_list:
         for k, v in elemt.items():
             if k == "completed" and v is True:
-                task_count += task_count
+                task_count += 1
         count += 1
     print(f"Employee {name} is done with tasks({task_count}/{count}):")
 
