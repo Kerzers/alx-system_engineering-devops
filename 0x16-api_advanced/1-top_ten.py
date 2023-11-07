@@ -13,7 +13,8 @@ def top_ten(subreddit):
     headers = {"User-Agent": "linux:0x16.api.advanced/1.0"}
     response = requests.get(url, headers=headers)
     if response.status_code != 200:
-        return None
+        print(None)
+        return
     data = json.loads(response.text)
     i = 0
     for i, elmt in enumerate(data['data']['children'][:10]):
